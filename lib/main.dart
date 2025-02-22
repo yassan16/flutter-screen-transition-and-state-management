@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screen_transition_and_state_management/dto/user.dart';
 import 'package:flutter_screen_transition_and_state_management/routes.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -60,9 +61,15 @@ class _MyHomePageState extends State<MyHomePage> {
           ElevatedButton(
             onPressed: () {
               Navigator.pushNamed(context, Routes.third,
-                  arguments: User(id: "3", password: "qwe"));
+                  arguments: User(id: "3", password: "qwe", age: 3));
             },
             child: Text("third screenへ"),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, Routes.riverpodFirst);
+            },
+            child: Text("riverpod first screenへ"),
           ),
         ],
       )),

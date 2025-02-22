@@ -4,6 +4,7 @@ import 'package:flutter_screen_transition_and_state_management/view/has_argument
 import 'package:flutter_screen_transition_and_state_management/view/has_argument/third_screen.dart';
 import 'package:flutter_screen_transition_and_state_management/view/no_argument/first_screen.dart';
 import 'package:flutter_screen_transition_and_state_management/view/no_argument/second_screen.dart';
+import 'package:flutter_screen_transition_and_state_management/view/riverpod/riverpod_first_screen.dart';
 
 class Routes {
   // 引数なし
@@ -15,11 +16,15 @@ class Routes {
   static const String third = "/third_screen";
   static const String fourth = "/fourth_screen";
 
+  // riverpod
+  static const String riverpodFirst = "/riverpod_first_screen";
+
   /// 引数なしルーティングの設定
   static getRoutes() {
     return {
       Routes.first: (context) => FirstScreen(),
       Routes.second: (context) => SecondScreen(),
+      Routes.riverpodFirst: (context) => RiverpodFirstScreen(),
     };
   }
 

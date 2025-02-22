@@ -34,7 +34,7 @@ class _ThirdScreenState extends State<ThirdScreen> {
           ElevatedButton(
             onPressed: () {
               Navigator.pushNamed(context, Routes.fourth,
-                  arguments: User(id: "4", password: "asdf"));
+                  arguments: User(id: "4", password: "asdf", age: 4));
             },
             child: Text("fourth screenへ"),
           ),
