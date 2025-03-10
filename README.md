@@ -2,7 +2,7 @@
 
 サンプルコードを用いて、実装方法を学ぶ。
 
-## 参考サイト
+## Riverpodに関する参考サイト
 * [riverpod.dev / (Async)NotifierProvider](https://riverpod.dev/ja/docs/providers/notifier_provider)
 * [Flutterの初期アプリをRiverpod Generatorで状態管理してみた](https://dev.classmethod.jp/articles/flutter-riverpod-generator-state-management/)
 * [Flutterで次のレベルへ！中級者向けRiverpod NotifierProviderの使い方](https://zenn.dev/honda9135/articles/7467922d162046#notifierprovider%E3%81%A8%E3%81%AF)
