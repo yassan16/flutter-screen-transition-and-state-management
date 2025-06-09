@@ -6,7 +6,6 @@ part 'generated/future_sample_notifier.g.dart';
 
 @riverpod
 class FutureSampleNotifier extends _$FutureSampleNotifier {
-  // 戻り値のUserを見てStateを判断している
   @override
   Future<String> build() {
     // Futureを返すことで非同期処理を模擬
